@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.chatclienteservidor.ViewControllers.HelloController">
+   <children>
+      <Label layoutX="294.0" layoutY="75.0" text="Usuario" />
+      <Label layoutX="285.0" layoutY="173.0" text="Contraseña" />
+      <PasswordField fx:id="ContraseñaFlied" layoutX="242.0" layoutY="200.0" />
+      <TextField fx:id="UsuarioLabel" layoutX="241.0" layoutY="103.0" />
+      <Button fx:id="AceptarButton" layoutX="361.0" layoutY="341.0" mnemonicParsing="false" onAction="#ComprarUsuario" text="Aceptar" />
+      <Button fx:id="CancelarButton" layoutX="509.0" layoutY="341.0" mnemonicParsing="false" onAction="#CancelarInicioSesion" text="Cancelar" />
+      <Button fx:id="ResgistrarseButton" layoutX="425.0" layoutY="341.0" mnemonicParsing="false" onAction="#AbrirRegistro" text="Registrarse" />
+   </children>
+</Pane>

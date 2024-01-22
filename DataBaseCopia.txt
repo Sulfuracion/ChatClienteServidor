@@ -1,0 +1,14 @@
+CREATE TABLE Usuarios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Mensajes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_remitente INT,
+    id_destinatario INT,
+    txtMensaje TEXT,
+    FOREIGN KEY (id_remitente) REFERENCES Usuarios(id),
+    FOREIGN KEY (id_destinatario) REFERENCES Usuarios(id)
+);
