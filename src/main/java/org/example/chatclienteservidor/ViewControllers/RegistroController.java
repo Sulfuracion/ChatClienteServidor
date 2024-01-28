@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
+import static org.example.chatclienteservidor.DBControllers.FuncionesDB.ingresarUsuario;
+
 public class RegistroController {
 
     @FXML
@@ -26,6 +28,7 @@ public class RegistroController {
 
     @FXML
     void ComprobarRegitroValido(ActionEvent event) {
+        ingresarUsuario(NombreRegistro.getText(),ContraseñaRegistro.getText());
 
     }
 

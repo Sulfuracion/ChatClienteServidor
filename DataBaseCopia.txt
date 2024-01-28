@@ -1,10 +1,13 @@
-CREATE TABLE Usuarios (
+CREATE database if not exists chatCliSer;
+use chatCliSer;
+
+CREATE TABLE if not exists Usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     password_hash VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE Mensajes (
+CREATE TABLE if not exists Mensajes (
     id INT PRIMARY KEY AUTO_INCREMENT,
     id_remitente INT,
     id_destinatario INT,
